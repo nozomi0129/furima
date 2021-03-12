@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 　　　　//呼び出されるので、一旦放置
       const sendWithoutCardInfo = () => {
         document.getElementById("card-number").removeAttribute("name");
-                                                // ↑消してね、属性値をと言っているので属性をかかないといけない
+                   // ↑消してね、属性値をと言っているので属性をかかないといけない
         document.getElementById("card-cvc").removeAttribute("name");
         document.getElementById("card-exp-month").removeAttribute("name");
         document.getElementById("card-exp-year").removeAttribute("name");

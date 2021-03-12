@@ -17,10 +17,12 @@ class PayForm
     validates :user_id
   end
   def save
+    
     order = Order.create(
       item_id: item_id,
       user_id: user_id
     )
+
     Address.create(
       order_id: order.id,
       postal_code: postal_code,
@@ -30,6 +32,8 @@ class PayForm
       building: building,
       phone_number: phone_number
     )
+
+    
   end
 
 end
